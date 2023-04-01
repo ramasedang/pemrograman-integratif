@@ -23,7 +23,7 @@ function createUser(call, callback) {
     if (err) throw err;
 
     user.id = result.insertId;
-    callback(null, user);
+    callback(null, "User created successfully");
   });
 }
 
@@ -58,7 +58,7 @@ function deleteUser(call, callback) {
   connection.query("DELETE FROM users WHERE id = ?", id, (err, result) => {
     if (err) throw err;
 
-    callback(null, {});
+    callback(null, "User deleted successfully");
   });
 }
 
