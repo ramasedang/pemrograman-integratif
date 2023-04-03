@@ -10,10 +10,11 @@ service UserData {
 }
 
 message User {
-    string name = 1;
-    string address = 2;
-    int32 age = 3;
-    string gender = 4;
+    int32 id = 1;
+    string name = 2;
+    string address = 3;
+    int32 age = 4;
+    string gender = 5;
 }
 
 message UserRequest {
